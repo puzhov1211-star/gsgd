@@ -1,0 +1,12 @@
+2.1. Wybór i uzasadnienie architektury sieci
+W projektowanym biurze o powierzchni 90 m² wybrano architekturę klient-serwer (Client-Server).  
+ Uzasadnienie: Architektura ta jest optymalna dla środowiska biurowego, w którym kluczowe znaczenie ma bezpieczeństwo danych, centralne zarządzanie uprawnieniami użytkowników oraz regularne tworzenie kopii zapasowych (backup). Umieszczenie dedykowanego serwera w osobnym pomieszczeniu technicznym (serwerownia / punkt MDF) gwarantuje stabilną pracę systemów księgowo-administracyjnych oraz udostępnianie zasobów i drukarek sieciowych dla wszystkich stanowisk komputerowych.
+2.2. Wybór topologii fizycznej i schemat
+ Wybór topologii: Zastosowano fizyczną topologię gwiazdy (Star).  
+ Uzasadnienie: Topologia gwiazdy zapewnia najwyższą niezawodność i elastyczność sieci. Awaria jednego przewodu lub stanowiska roboczego nie wpływa na funkcjonowanie pozostałych urządzeń w biurze. Wszystkie tory kablowe z poszczególnych pomieszczeń (sala konferencyjna, open space, recepcja) schodzą się bezpośrednio do centralnego punktu dystrybucyjnego (MDF) w szafie RACK.  
+ Opis schematu: Urządzeniem centralnym w szafie dystrybucyjnej jest przełącznik (Switch) Gigabit Ethernet, do którego wpięty jest serwer oraz poprzez patch-panel wszystkie podwójne gniazda abonenckie (⁠2x RJ45⁠) rozlokowane w biurze.  
+2.3. Rysunek sytuacyjny i rozmieszczenie infrastruktury
+Rysunek sytuacyjny lokalu biurowego uwzględnia następujące elementy:
+ Trasy okablowania poziomego: Kable UTP kategorii 5e prowadzone są w natynkowych korytkach kablowych PCV wzdłuż ścian (na wysokości 30 cm nad podłogą), prostopadle i równolegle do korytarzy, z zachowaniem wymaganej odległości min. 30 cm od instalacji elektrycznej 230V.  
+ Rozmieszczenie punktów abonenckich: Zgodnie z normą PN-EN 50174 (1 punkt na każde 10 m²), rozmieszczono 10 podwójnych gniazd ⁠2x RJ45⁠ (oznaczonych m.in. ⁠FF-M1/0A1lp⁠, ⁠FF-M1/0B1lp⁠ itd.) w bezpośrednim sąsiedztwie stanowisk pracy.  
+ Punkt dystrybucyjny (MDF): W wydzielonym pomieszczeniu technicznym (C2) zlokalizowano wiszącą szafę RACK 19" 9U, w której terminowane są wszystkie kable poziome dochodzące z całego biura.
