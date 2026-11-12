@@ -1,0 +1,13 @@
+2.4.1. Zadanie — Identyfikacja elementów DFD
+Маркер Encje zewnętrzne (podmioty poza systemem):
+Маркер Użytkownik (Klient): wyszukuje i przegląda ranking samochodów, filtruje i sortuje wyniki oraz wystawia oceny pojazdom w określonych kategoriach.
+Маркер Administrator: zarządza bazą danych systemu — dodaje nowe samochody, edytuje lub usuwa istniejące wpisy pojazdów.
+Маркер Procesy (główne operacje przetwarzania danych):
+Маркер 1.0 Przeglądanie i wyszukiwanie aut: odbieranie parametrów wyszukiwania od użytkownika, odczyt danych z magazynu oraz zwracanie przefiltrowanej listy pojazdów.
+Маркер 2.0 Ocenianie samochodu: przyjmowanie ocen od użytkownika, weryfikacja pojazdu, przeliczanie średniej oceny oraz zapisywanie nowej oceny w systemi.
+Маркер 3.0 Zarządzanie bazą pojazdów: przetwarzanie żądań administratora dotyczących dodawania, modyfikacji lub usuwania danych o samochodach.
+Маркер Magazyny danych (zbiory przechowywanych informacji):
+Маркер D1 Samochody (baza_aut.csv): przechowuje informacje o pojazdach (marka, model, rok produkcji, średnia ocena).
+Маркер D2 Oceny (baza_ocen.csv): przechowuje szczegółowe oceny wystawione przez użytkowników dla poszczególnych aut.
+Маркер Przepływy danych (informacje krążące w systemie):
+Маркер Parametry wyszukiwania, lista dostępnych aut, dane wybranego pojazdu, nowa ocena użytkownika, potwierdzenie zapisania oceny, dane nowego samochodu, zaktualizowana baza danych.
