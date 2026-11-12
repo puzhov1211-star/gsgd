@@ -1,0 +1,10 @@
+2.4.1. Zadanie — Identyfikacja elementów DFD
+Маркер Encje zewnętrzne: Użytkownik (Klient), Administrator  
+Маркер Procesy:
+1.0 Przeglądanie i wyszukiwanie aut
+2.0 Ocenianie samochodu
+3.0 Zarządzanie bazą pojazdów  
+Маркер Magazyny danych:
+Маркер D1 Samochody (baza_aut.csv)
+Маркер D2 Oceny (baza_ocen.csv)  
+Маркер Przepływy danych: parametry wyszukiwania, lista aut, dane wybranego auta, nowa ocena, potwierdzenie zapisu, dane nowego auta, zaktualizowana baza
